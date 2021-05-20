@@ -1,0 +1,24 @@
+.total {
+	padding: 30px 60px 100px 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@media only screen and (max-width: 760px) {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+		padding: 20px;
+		h1 {
+			font-size: 16px;
+		}
+	}
+	.total__left {
+		width: 100%;
+	}
+	.total__right {
+		h1 {
+			color: #111111;
+		}
+	}
+}

@@ -1,0 +1,108 @@
+.body {
+	height: 70vh;
+	@media only screen and (max-width: 760px) {
+		display: flex;
+		flex-direction: column;
+	}
+
+	hr {
+		color: 1px solid red;
+		@media only screen and (max-width: 760px) {
+			display: none;
+		}
+	}
+	.body__body {
+		display: flex;
+		height: 80vh;
+		justify-content: space-between;
+		padding-left: 60px;
+		padding-right: 60px;
+		align-items: center;
+
+		@media only screen and (max-width: 760px) {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.body__left {
+			margin-right: 180px;
+			@media only screen and (max-width: 760px) {
+				margin: 40px;
+				text-align: center;
+				img {
+					width: 350px;
+					margin: 40px;
+					text-align: center;
+				}
+			}
+			h2 {
+				color: #484848;
+				margin-bottom: 1px;
+			}
+			p {
+				color: #b3babd;
+			}
+		}
+		.body__right {
+			@media only screen and (max-width: 760px) {
+				text-align: center;
+			}
+
+			.payment__form {
+				@media only screen and (max-width: 760px) {
+					position: absolute;
+					left: 20px;
+					top: 650px;
+				}
+			}
+			.body__rightTopLeft {
+				img {
+					@media only screen and (max-width: 760px) {
+						display: none;
+					}
+				}
+			}
+			.body__rightTopRight {
+				img {
+					@media only screen and (max-width: 760px) {
+						display: none;
+					}
+				}
+			}
+			.body__rightTop {
+				padding-bottom: 62px;
+				align-items: center;
+				.body__rightTopRight {
+					margin-left: 30px;
+				}
+				.body__topRight {
+					flex: 2;
+				}
+				display: flex;
+				justify-content: space-between;
+				img {
+					width: 50px;
+					margin-right: 15px;
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+	.body__bottom {
+		@media only screen and (max-width: 760px) {
+			position: absolute;
+			top: 1110px;
+			text-align: center;
+		}
+	}
+	.body__total{
+		@media only screen and (max-width: 760px) {
+			position: absolute;
+			top: 1300px;
+			text-align: center;
+		}
+
+	}
+}
